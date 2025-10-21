@@ -227,15 +227,65 @@ Predicted-prob distributions: show model calibration / separability
 
 Placeholders: the code prints precise numeric metrics at runtime (accuracy, ROC-AUC, Average Precision). Replace the placeholders below with your run numbers when assembling slides.
 
-ROC-AUC Score: ![Fake News Detector preview](./evaluation/ROC_AUC_SCORE.png)
+# 🧠 Model Evaluation Results
 
-Average Precision Score (AP): ![Fake News Detector preview](./evaluation/PRECISION_SCORE.png)
+Below are the key performance visualizations for the Fake News Detector model.  
+Each plot highlights different aspects of the model’s predictive performance.
 
-learning Curves: ![Fake News Detector preview](./evaluation/LEARNING_CURVES.png)
+---
 
-Distribution of predicting probabilities by true class: ![Fake News Detector preview](./evaluation/Distribution_of_predicting_probabilities_by_true_class.png)
+## 📊 ROC-AUC Score
+Shows the trade-off between the True Positive Rate and False Positive Rate.  
+A higher area under the curve (AUC) indicates stronger model discrimination ability.
 
-Confusion Matrix: ![Fake News Detector preview](./evaluation/CONFUSION_MATRIX.png)
+<p align="center">
+  <img src="./evaluation/ROC_AUC_SCORE.png" alt="ROC-AUC Score" width="70%">
+</p>
+
+---
+
+## 🎯 Average Precision Score (AP)
+Displays the relationship between precision and recall, summarizing model performance for imbalanced datasets.
+
+<p align="center">
+  <img src="./evaluation/PRECISION_SCORE.png" alt="Average Precision Score" width="70%">
+</p>
+
+---
+
+## 📈 Learning Curves
+Visualizes model performance over training epochs.  
+It helps diagnose **underfitting** or **overfitting** by comparing training vs. validation accuracy/loss.
+
+<p align="center">
+  <img src="./evaluation/LEARNING_CURVES.png" alt="Learning Curves" width="70%">
+</p>
+
+---
+
+## 📉 Distribution of Predicting Probabilities by True Class
+Shows how confidently the model predicts probabilities for each class,  
+helping assess calibration and separation between true and false samples.
+
+<p align="center">
+  <img src="./evaluation/Distribution_of_predicting_probabilities_by_true_class.png" alt="Distribution of Predicting Probabilities by True Class" width="70%">
+</p>
+
+---
+
+## 🧩 Confusion Matrix
+Illustrates the number of **true positives, true negatives, false positives, and false negatives**.  
+A good model will show a strong diagonal (high correct classifications).
+
+<p align="center">
+  <img src="./evaluation/CONFUSION_MATRIX.png" alt="Confusion Matrix" width="70%">
+</p>
+
+---
+
+> 💡 **Tip:** All evaluation plots are located in the `evaluation/` directory.  
+> You can regenerate them using your training script (`training.py`) or evaluation notebook.
+
 
 
 Interpretation &  reading of results
