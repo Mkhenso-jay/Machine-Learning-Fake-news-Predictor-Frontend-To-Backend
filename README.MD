@@ -118,11 +118,6 @@ GitHub renders embedded HTML inside Markdown files, so the table above will disp
 
 ---
 
-## License
-Include your project license here (e.g., MIT). Example:
-
-
-
 
 Notes: dataset is roughly balanced in this run (~52.3% fake, 47.7% real).
 
