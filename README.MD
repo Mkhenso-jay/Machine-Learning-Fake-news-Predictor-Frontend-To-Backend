@@ -1,8 +1,6 @@
-Fake News Detector — Project Presentation
+Fake News Detector
 
-Author: (Your name)
-Role: Data Scientist
-Date: (Presentation date)
+Authors: Mngomezulu Mkenso, Chauke Ntshovelo Brilliant
 
 Overview / Objective
 
@@ -103,21 +101,7 @@ The table shows the `title`, `text`, `subject`, and `label` columns. Labels are 
   - `0` = Real / True news  
   - `1` = Fake news
 
-> Adjust the label mapping above if your dataset uses a different encoding.
-
 ---
-
-## How to display this README nicely
-GitHub renders embedded HTML inside Markdown files, so the table above will display as a formatted table. If you prefer plain Markdown tables, you can convert the HTML table to Markdown — but HTML gives you finer control for long text and truncation.
-
----
-
-## Usage notes
-- This sample shows only the first rows — your real dataset will be larger and may need preprocessing (cleaning, tokenization, stemming/lemmatization, vectorization).
-- If you store large `.csv` files, consider using Git LFS or a separate data hosting solution (do **not** commit files >100 MB directly to GitHub).
-
----
-
 
 Notes: dataset is roughly balanced in this run (~52.3% fake, 47.7% real).
 
