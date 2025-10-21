@@ -1,6 +1,6 @@
 Fake News Detector
 
-Authors: Mngomezulu Mkenso, Chauke Ntshovelo Brilliant
+Authors: Mngomezulu Mkhenso, Chauke Ntshovelo Brilliant
 
 Overview / Objective
 
