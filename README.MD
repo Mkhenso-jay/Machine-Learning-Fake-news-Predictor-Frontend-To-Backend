@@ -33,21 +33,95 @@ label
 Name: proportion, dtype: float64
 
 
-Sample records (first rows):
+# Fake News Detector — Sample Records
 
-                                               title
-0  As U.S. budget fight looms, Republicans flip t...
-1  U.S. military to accept transgender recruits o...
-2  Senior U.S. Republican senator: 'Let Mr. Muell...
-3  FBI Russia probe helped by Australian diplomat...
-4  Trump wants Postal Service to charge 'much mor...
+A short example showing the first rows from the dataset used for training/testing the fake-news detector.  
+The table shows the `title`, `text`, `subject`, and `label` columns. Labels are `0` (real) and `1` (fake) — adjust if your project uses a different convention.
 
-                                                text       subject  label
-0  WASHINGTON (Reuters) - The head of a conservat...  politicsNews      0
-1  WASHINGTON (Reuters) - Transgender people will...  politicsNews      0
-2  WASHINGTON (Reuters) - The special counsel inv...  politicsNews      0
-3  WASHINGTON (Reuters) - Trump campaign adviser ...  politicsNews      0
-4  SEATTLE/WASHINGTON (Reuters) - President Donal...  politicsNews      0
+---
+
+## Sample records (first rows)
+
+<!-- HTML table for nicer formatting in GitHub README -->
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">index</th>
+      <th style="text-align:left">title</th>
+      <th style="text-align:left">text (truncated)</th>
+      <th style="text-align:left">subject</th>
+      <th style="text-align:center">label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>As U.S. budget fight looms, Republicans flip t...</td>
+      <td>WASHINGTON (Reuters) - The head of a conservative...</td>
+      <td>politicsNews</td>
+      <td style="text-align:center">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>U.S. military to accept transgender recruits o...</td>
+      <td>WASHINGTON (Reuters) - Transgender people will...</td>
+      <td>politicsNews</td>
+      <td style="text-align:center">0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Senior U.S. Republican senator: 'Let Mr. Muell...</td>
+      <td>WASHINGTON (Reuters) - The special counsel inv...</td>
+      <td>politicsNews</td>
+      <td style="text-align:center">0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>FBI Russia probe helped by Australian diplomat...</td>
+      <td>WASHINGTON (Reuters) - Trump campaign adviser ...</td>
+      <td>politicsNews</td>
+      <td style="text-align:center">0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Trump wants Postal Service to charge 'much mor...</td>
+      <td>SEATTLE/WASHINGTON (Reuters) - President Donal...</td>
+      <td>politicsNews</td>
+      <td style="text-align:center">0</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Column descriptions
+
+- **title** — Short headline for the news article.  
+- **text** — Article body content (often truncated in displays).  
+- **subject** — Topic label or category (e.g., `politicsNews`).  
+- **label** — Ground-truth target used for supervised learning:  
+  - `0` = Real / True news  
+  - `1` = Fake news
+
+> Adjust the label mapping above if your dataset uses a different encoding.
+
+---
+
+## How to display this README nicely
+GitHub renders embedded HTML inside Markdown files, so the table above will display as a formatted table. If you prefer plain Markdown tables, you can convert the HTML table to Markdown — but HTML gives you finer control for long text and truncation.
+
+---
+
+## Usage notes
+- This sample shows only the first rows — your real dataset will be larger and may need preprocessing (cleaning, tokenization, stemming/lemmatization, vectorization).
+- If you store large `.csv` files, consider using Git LFS or a separate data hosting solution (do **not** commit files >100 MB directly to GitHub).
+
+---
+
+## License
+Include your project license here (e.g., MIT). Example:
+
+
 
 
 Notes: dataset is roughly balanced in this run (~52.3% fake, 47.7% real).
